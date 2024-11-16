@@ -207,6 +207,7 @@ li {
 p {
   margin-top: 2em;
   font-family: "Poppins", serif;
+  font-weight: 500;
 }
 
 .right-container button {
@@ -228,16 +229,20 @@ img {
 
 @media screen and (max-width: 480px) {
   .main {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   img {
-    height: 7em !important;
+    height: 6em !important;
     width: auto;
   }
 
   .right-container h1 {
-    font-size: 1.7em;
+    font-size: 1.8em;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
   }
 
   .left-section {
@@ -245,13 +250,14 @@ img {
   }
 
   .right-container button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     border: none;
     outline: none;
-    font-size: 0.8em;
+    font-size: 1rem;
     border-radius: 50px;
-    margin-top: 50px;
+    margin: 50px 0;
     font-weight: 500;
+    width: 80%;
   }
 
   nav .nav-left {
